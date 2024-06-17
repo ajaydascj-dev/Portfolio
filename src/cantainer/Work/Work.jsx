@@ -39,7 +39,7 @@ const Work = () => {
         My creative<span> Portfolio</span> section
       </h2>
       <div className="app__work-filter">
-        {["UI/UX", "Web App", "Node Js", "React Js", "All"].map(
+        {["UI/UX", "Node Js", "React Js", "All"].map(
           (item, index) => {
             return (
               <div
@@ -66,7 +66,7 @@ const Work = () => {
               <div className="app__work-img app__flex">
                 <img src={urlFor(work.imgUrl)} alt={work.name} />
                 <motion.div
-                  whileHover={{ opacity: [0, 1] }}
+                  // whileHover={{ opacity: [1] }}
                   transition={{
                     duration: 0.25,
                     ease: "easeInOut",

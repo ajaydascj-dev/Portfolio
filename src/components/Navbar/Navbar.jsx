@@ -28,9 +28,13 @@ const Navbar = () => {
           <motion.div
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
+            onClick={() => setToggle(false)}
           >
-            <HiX onClick={() => setToggle(false)} />
-            <ul > 
+            {/* {<HiX onClick={() => setToggle(false)} /> } */}
+            <motion.ul 
+            whileInView={{ x: [300, 0] }}
+            transition={{ duration: 0.85, ease: "easeOut" }}
+            > 
             {links.map((link) => {
               return (
                 <li key={link} >
@@ -38,7 +42,7 @@ const Navbar = () => {
                 </li>
               );
             })}
-            </ul>  
+            </motion.ul>  
           </motion.div>
         )}
       </div>
