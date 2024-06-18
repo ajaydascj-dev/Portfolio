@@ -99,7 +99,7 @@
     bottom: 0;
     right: 0;
     z-index: 5;
-
+    left: 100%;
     padding: 1rem;
 
     width: 80%;
@@ -116,6 +116,7 @@
     background-repeat: repeat;
 
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+    transition: all 0.85s ease-in-out;
 
     svg {
       width: 35px;
@@ -154,12 +155,16 @@
         }
       }
     }
-    @media screen and (min-width : 900px) {
-        display: none;
+    @media screen and (min-width: 900px) {
+      display: none;
     }
   }
-  
-  @media screen and (min-width : 900px) {
+
+  @media screen and (min-width: 900px) {
     display: none;
+  }
 }
+
+.showSideNav {
+  left: 20% !important;
 }
